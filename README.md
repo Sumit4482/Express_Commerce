@@ -17,10 +17,10 @@ Express_Commerce is a simple e-commerce API built using Node.js and Express.js. 
 ### Product Requests
 
 - `GET /products`: Retrieve a list of available products.
-- `GET /products/{id}`: Retrieve details of a specific product.
+- `GET /products/getbyid/{id}`: Retrieve details of a specific product.
 - `GET /products/search`: Search for products based on certain criteria.
 - `POST /products`: Add a new product to the inventory.
-- `PUT /products/getbyid/{id}`: Update information for a specific product.
+- `PUT /products/{id}`: Update information for a specific product.
 - `DELETE /products/{id}`: Remove a product from the inventory.
 
 ### Shopping Cart Requests
