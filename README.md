@@ -27,7 +27,7 @@ Express_Commerce is a simple e-commerce API built using Node.js and Express.js. 
 
 - `GET /cart`: Retrieve the contents of the shopping cart.
 - `POST /cart/add`: Add a product to the shopping cart.
-- `POST /cart/remove`: Remove a product from the shopping cart.
+- `DELETE /cart/{id}`: Remove a product from the shopping cart.
 - `POST /cart/checkout`: Process the checkout and create an order.
 
 ### Order Requests
