@@ -40,6 +40,7 @@ async function updateProduct(req, res) {
 async function getAllProducts(req, res) {
   try {
     const products = await productService.getAllProducts(); // Retrieve all products from database
+    console.log("GETTING ALL PRODUCTSSSSS");
     res.json(products); // Respond with the list of products
   } catch (error) {
     res.status(500).json({ error: error.message }); // Handle errors
@@ -69,7 +70,8 @@ async function searchProducts(req, res) {
     const products = await productService.searchProducts(query); // Search for products
     res.json(products); // Respond with the search results
   } catch (error) {
-    res.status(500).json({ error: error.message }); // Handle errors
+    ;
+   res.status(500).json({ error: error.message }); // Handle errors
   }
 }
 

@@ -14,7 +14,7 @@ router.put('/:id', productsController.updateProduct);
 router.get('/', productsController.getAllProducts);
 
 // Route to retrieve information for a specific product
-router.get('/:id', productsController.getProductById);
+router.get('/getbyid/:id', productsController.getProductById);
 
 // Route to search for products
 router.get('/search', productsController.searchProducts);

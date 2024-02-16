@@ -66,7 +66,6 @@ async function updateProduct(productId, updatedProductData) {
     }
   }
   
-
   // Service function to retrieve information for a specific product from the database
 async function getProductById(productId) {
   try {
@@ -82,7 +81,6 @@ async function getProductById(productId) {
 async function searchProducts(query) {
   try {
     const products = await readDataFromFile(); // Read current products from file
-    
     // Filter products based on name
     const filteredProducts = products.filter(product =>
       product.name.toLowerCase().includes(query.toLowerCase())
